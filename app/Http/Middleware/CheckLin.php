@@ -1,0 +1,2 @@
+<?php
+ namespace App\Http\Middleware; use Closure; use Illuminate\Http\Request; use Symfony\Component\HttpFoundation\Response; use Carbon\Carbon; class CheckLin { public function handle(Request $request, Closure $next) : Response { $licenseKey = config("\x6c\x69\156\56\x4c\111\x43\105\116\123\105\137\113\105\131"); $expiryDate = config("\154\x69\156\56\114\x49\103\x45\116\123\x45\x5f\x45\x58\120\x49\x52\131\x5f\104\x41\x54\105"); if (!$licenseKey || Carbon::parse($expiryDate)->isBefore(now())) { abort(404); } return $next($request); } }

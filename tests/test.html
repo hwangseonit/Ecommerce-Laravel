@@ -1,0 +1,57 @@
+<div class="customer-block-address-left input-text-checked px-20 pb-20" style="     min-width: 540px;">
+
+    <span class="title-box-head mb-20 font-20">Thêm mới địa chỉ nhận hàng</span>
+    <form action="https://concung.com/dia-chi-khach-hang.html?digital=0" class="add_address" method="post"
+        data-gtm-form-interact-id="0">
+
+        <input type="hidden" name="address_map" value="">
+        <input type="hidden" name="latitude_map" value="">
+        <input type="hidden" name="longitude_map" value="">
+        <input type="hidden" name="datatype" value="0">
+        <span class="d-block color-text-main"> Vui lòng xác nhận các nội dung bên dưới</span>
+
+        <div class="form-group fullname-quick">
+            <input class="form-control border-radius border-0 bg-f2 mt-15" type="text" name="fullname" value=""
+                placeholder="Họ tên người nhận" fdprocessedid="rnfjzp">
+            <span class="ajax-message-error font-13 italic ml-10"></span>
+        </div>
+        <div class="form-group phone-quick ">
+            <input class="form-control border-radius bg-f2 border-0  mt-15" type="text" maxlength="10"
+                name="customer_phone" value="0342585307" placeholder="Số điện thoại người nhận" fdprocessedid="sjcumc">
+            <span class="ajax-message-error font-13 italic ml-10"></span>
+        </div>
+        <div class="form-group ">
+            <input class="form-control border-radius border-0 bg-f2 mt-15" type="text" name="" value=""
+                placeholder="Số nhà Tên đường, Phường/Xã, Quận/Huyện" fdprocessedid="rnfjzp">
+            <span class="ajax-message-error font-13 italic ml-10"></span>
+        </div>
+
+        <div class="news- mr-0 mb-0 add_address_map hide">
+            <div class="d-flex">
+
+
+
+            </div>
+
+            <div id="results-panel" class="news-items pl-0 pr-0 mt-15 ">
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62860.622877793416!2d105.71637037821017!3d10.034268928872693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0629f6de3edb7%3A0x527f09dbfb20b659!2zQ2FuIFRobywgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1718191308295!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <label class="custom-control custom-checkbox custom-cycle custom-border-block mt-20 pb-0 mb-0"
+                style="    margin-left: 118px;    height: auto;                padding-top: 0px;">
+                <span class="custom-control-label">
+                    <div class="d-flex justify-content-between align-center">
+                        <div class="pr-20 font-14 color-20">
+                            <span class="font-medium ">Chọn làm địa chỉ mặc định</span>
+                        </div>
+                    </div>
+                </span>
+
+            </label>
+            <input type="button" name="submitAddressShip"
+                class="style-btn-40 text-white bg-cc-apple-blue fon-medium hide " value="Lưu">
+    </form>
+</div>
